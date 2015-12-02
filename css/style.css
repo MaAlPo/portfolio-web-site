@@ -1,0 +1,348 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	font: 14px/1.41 Verdana, Arial, sans-serif;/**/
+	width: 100%;
+	height: 100%;
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	color: #ffffff;
+	background-color: #002;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.wrapper{
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+    margin-bottom: -75px;
+	min-width: 1140px; /* +40 for container */
+	overflow: hidden;
+}
+* html .wrapper{
+    height: 100%;
+}
+.container{
+	width: 1100px; /* or 1100*/
+	margin: 0 auto;
+}
+.screen{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	background-color: #001;
+    text-shadow: 0 0 15px rgba(0,0,0,.9);
+	cursor: default;
+}
+.titleScreen{
+    position: absolute;
+    bottom: -66%;
+    left: 20%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.authorScreen{
+	display: inline-block;
+	width: 442px;
+	height: 135px;
+	float:left;
+}
+.linkScreen{
+	display: inline-block;
+	width: 70px;
+	height: 72px;
+	background-color: #fff;
+	float: left;
+	margin: 53px 35px;
+	cursor: pointer;
+}
+.authorScreen span{
+	line-height: 60px;
+}
+.authorScreen span:first-child{
+	font-size: 60px;
+}
+.authorScreen span:nth-child(3n){
+	font-size: 100px;
+}
+header{
+	min-width: 650px;
+	width: 1100px;
+	height: 100px;
+    border-bottom: 2px solid white;
+}
+.title{
+	display: inline-block;
+	min-width: 300px;
+	width: 350px;
+	min-height: 70px;
+	height: 100px;
+	float: left;
+}
+.title span{
+	line-height: 40px;
+}
+.title span:first-child{
+	font-size: 20px; /*60 for main*/
+}
+.title span:nth-child(2){
+	font-size: 60px;  /*100 for main*/
+}
+.author{
+	display: inline-block;
+	width: 290px;
+	float:left;
+}
+.link{
+	display: inline-block;
+	min-width: 30px;
+	width: 42px;
+	min-height: 30px;
+	height: 42px;
+	margin-top: 39px;
+	background-color: #fff;
+	float:left;
+	cursor: pointer;
+}
+.nav{
+	display: inline-block;
+	min-width: 300px;
+	width: 300px;
+	min-height: 70px;
+	height: 100px;
+	float: right;
+}
+.nav ul{
+	list-style: none;
+	display: block;
+	width: inherit;
+	height: inherit;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+	cursor: default;
+}
+.nav li{
+	display: inline-block;
+	width: auto;
+	height: 100px;
+	margin: 0 10px;
+}
+.nav li a{
+	display: block;
+	font-size: 11px;
+	margin: 50px 0;
+}
+.content{
+	width: 100%;
+	height: auto;	
+	min-height: 100%;
+    padding-top: 20px;
+}
+.photo{
+	width: auto;
+	height: auto;
+	min-height: 100%;
+	margin: 0 auto; 
+	padding-top: 10px;
+}
+.item{
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border-collapse: collapse;
+	background-color: white;
+	display: inline-block;
+	overflow: hidden;
+	float: left;
+}
+.item img{
+	max-width: auto;
+	max-height: 200px;
+}
+.container:after{
+    display: block;
+}
+.empty{
+    height: 75px;
+}
+footer{
+    border-top: 1px solid #d3d3d3;
+    width: 1110px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: .5;
+}
+.titleItem{
+    width: 100%;
+    min-height: 70px;
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+}
+.titleItem a{
+    display: block;
+    margin: 0 auto;
+    font-size: 11px;
+}
+.contacts{
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    min-height: 100%;
+    padding: 0 20px;
+    text-align: right;
+    cursor: default;
+ }
+.contacts h2{
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    padding: 0 5px;
+    margin-top: 0;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.70);
+    border-left: 1px solid rgba(255, 0, 0, 0.70);
+}
+.contacts span{
+    display: block;
+    margin: 10px 0;
+    width: 400px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contacts span:nth-child(2n){
+    color: rgba(255, 0, 0, 0.70);
+    font-size: 18px;
+}
+.message{
+    display: inline-block;
+    width: 450px;
+    height: auto;
+    min-height: 100%;
+    padding: 0 20px;
+}
+.message h2{
+    display: inline-block;
+    width: auto;
+    padding: 0 5px;
+    margin-top: 0;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.70);
+    border-right: 1px solid rgba(255, 0, 0, 0.70);
+}
+.message span{
+    display: block;
+    height: 30px;
+    margin: 10px 0;
+    color: rgba(255, 0, 0, 0.70);
+    font-weight: bold;
+    font-size: 18px;
+}
+.message input{
+    width: 350px;
+    height: 24px;
+    color: #000000;
+    text-align: center;
+}
+.message textarea{
+    display: block;
+    width: 350px;
+    height: 215px;
+    color: #000000;
+    resize: none;
+    overflow-y: auto;
+}
+.message button{
+    width: 356px;
+    height: 40px;
+    margin: 15px 0;
+    display: block;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    color: #ffffff;
+    font-size: 18px;
+    border: 2px solid rgba(255, 0, 0, 0.70);
+}
+.left_col{
+    width: 50%;
+    height: auto;
+    display:inline-block;
+    float: left;
+    text-align: right;
+}
+.right_col{
+    width: 50%;
+    height: auto;
+    display:inline-block;
+    float: right;
+    text-align: left;
+}
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear:both;
+}
+.photoAuthor{
+    display: inline-block;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 50px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.photoAuthor img{
+    width: 300px;
+    height: 300px;
+}
+.information{
+    display: inline-block;
+    width: 350px;
+    height: 400px;
+    background-color: transparent;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 16px;
+    word-break: break-all;
+}
+.elseInfo{
+    width: 700px;
+    margin: 0 auto;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 16px;
+    word-break: break-all;
+}
+.social{
+    width: 415px;
+    height: auto;
+    margin: 35px auto;
+    border-top:1px dotted #808080;
+}
+.social i{
+    display:inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 25px;
+    font-size: 50px;
+}
